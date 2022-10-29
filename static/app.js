@@ -3,12 +3,16 @@ var train_data = {
     file: null
 };
 
+var con = null;
 var recognize_data = {
     file: null
 };
 
 
 var message = null;
+div.forms-confirmation-container-full{
+    background: #ffffff;
+}
 var active_section = null;
 
 function render(){
@@ -101,7 +105,7 @@ $(document).ready(function(){
         message = null;
 
         if(train_data.name && train_data.file){
-            // do send data to backend api
+            //                                 do send data to backend api
 
             var train_form_data = new FormData();
 
